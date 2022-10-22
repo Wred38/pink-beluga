@@ -47,11 +47,12 @@ body {
 
 #footer {
     background-color: hsl(352, 52%, 40%);
-    position: relative;
-    bottom: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .signature {
+    width: fit-content;
     text-align: center;
     padding: 26px;
 }
