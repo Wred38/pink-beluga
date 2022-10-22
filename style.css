@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Asap&family=Bungee+Inline&display=swap');
+/*  ROOT  */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&family=Asap&family=Bungee+Inline&family=Rock+Salt&display=swap');
 
 body {
     margin: 0;
     background-color: hsl(352, 52%, 95%);
     font-family: 'Asap', sans-serif;
 }
+
+/*  HEADER  */
 
 .header {
     display: flex;
@@ -35,6 +39,31 @@ body {
     text-decoration: none;
 }
 
+/* FOOTER  */
+
+#footer {
+    background-color: hsl(352, 52%, 40%);
+}
+
+.signature {
+    text-align: center;
+
+}
+
+.signature p {
+    font-family: 'Rock Salt', cursive;
+    transform: rotate(5deg);
+    font-size: 8px;
+    margin-top: 8px;
+    margin-bottom: -12px;
+}
+
+.signature .dev-sign {
+    margin: 0;
+    font-size: 16px;
+}
+
+/*  HOME  */
 
 .main-title {
     padding: 42px 64px;
@@ -44,9 +73,55 @@ body {
 }
 
 .main-title h1 {
-    font-family: 'Bungee Inline', cursive;
+    font-family: 'Bungee Inline', 'Asap', sans-serif;
 }
 
 .main-title h2 {
     text-align: left;
+}
+
+/*  COWNTDOWNS  */
+
+.title-wrapper {
+    padding-left: 64px;
+    padding-top: 42px;
+}
+
+.countdowns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown-element {
+    border: 4px solid hsl(352, 52%, 54%);
+    border-radius: 10px;
+    width: clamp(200px, 80vw, 750px);
+    margin: 24px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cd-title {
+    padding: 16px;
+    padding-left: 36px;
+    font-size: 24px;
+    margin: 0;
+    background-color: hsl(352, 52%, 54%);
+    color: white;
+}
+
+.countdown {
+    font-family: 'PT Mono', monospace;
+    font-variant: small-caps;
+    font-size: 28px;
+    text-align: center;
+}
+
+.cd-description {
+    padding: 16px;
+    padding-left: 36px;
+    margin: 0;
+    background-color: hsl(352, 52%, 80%);
+    color: hsl(0, 0%, 30%);
 }

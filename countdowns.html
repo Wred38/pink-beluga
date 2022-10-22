@@ -1,3 +1,4 @@
+<!--DOCTYPE-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,16 +16,18 @@
             $("#footer").load("footer.html");
         });
     </script>
-    <title>Pink Beluga</title>
+    <title>Countdowns | Pink Beluga</title>
 </head>
 
 <body>
     <div id="header"></div>
     <!--Remaining section-->
-    <div class="main-title">
-        <h1>Nik's unusual friend!</h1>
-        <h2>The Pink Beluga</h2>
+    <div class="title-wrapper">
+        <h1 class="title">Countdowns</h1>
+        <p>Here are some of my public countdowns</p>
     </div>
+    <div class="countdowns"></div>
+    <script>createCountdownsList(countdowns)</script>
     <!--Remaining section-->
     <div id="footer"></div>
 </body>
