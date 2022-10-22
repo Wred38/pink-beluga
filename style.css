@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&family=Asap&family=Bungee+Inline&family=Rock+Salt&display=swap');
 
+html{
+    margin-bottom: 0;
+}
+
 body {
     margin: 0;
     background-color: hsl(352, 52%, 95%);
@@ -43,24 +47,27 @@ body {
 
 #footer {
     background-color: hsl(352, 52%, 40%);
+    position: relative;
+    bottom: 0;
 }
 
 .signature {
     text-align: center;
-
+    padding: 26px;
 }
 
 .signature p {
     font-family: 'Rock Salt', cursive;
     transform: rotate(5deg);
-    font-size: 8px;
+    font-size: 12px;
     margin-top: 8px;
     margin-bottom: -12px;
+    color: white;
 }
 
 .signature .dev-sign {
     margin: 0;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 /*  HOME  */
